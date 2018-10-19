@@ -3,20 +3,12 @@ import styled, { ThemeProvider, injectGlobal } from 'styled-components';
 import Header from './Header';
 import Meta from './Meta';
 
-const MyButton = styled.button `
-color: palevioletred;
-font-size: 1em;
-margin: 1em;
-padding: 0.25em 1em;
-border: 2px solid palevioletred;
-border-radius: 3px;
-`;
 
 const theme = {
     red: '#FF0000',
-    lightGrey: '#E1E1E1',
     black: '#393939',
     grey: '#3A3A3A',
+    lightgrey: '#E1E1E1',
     offWhite: '#EDEDED',
     maxWidth: '1000px',
     bs: '0 12px 24px 0 rgba(0,0,0,0.09)'
@@ -68,7 +60,6 @@ export default class Page extends Component {
                 <StyledPage>
                     <Meta />
                     <Header /> 
-                    <MyButton> Click me</MyButton>
                     <Inner>{this.props.children}</Inner>
                 </StyledPage>
             </ThemeProvider>
